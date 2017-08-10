@@ -9,8 +9,9 @@ from bs4 import BeautifulSoup, SoupStrainer
 
 def down_page_img(page_url, page_count, title):
     print(page_url, page_count, title)
-    dir_name = os.path.join()
-    os.mkdir(os.path.join("img",title))
+    dir_name=os.path.join("img",title)
+    if not os.path.exists(dir_name):
+        os.mkdir(dir_name)
     for i in range(1, (int(page_count) + 1)):
         headers = {
             "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"}
