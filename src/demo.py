@@ -14,5 +14,5 @@ print(url.split("/")[-1])
 
 os.makedirs("img/kk")
 
-with open("img/kk/001.txt","w",encoding="utf-8") as f:
+with open("img/kk/E001.txt","w",encoding="utf-8") as f:
     f.write("仲华是个傻子")
